@@ -55,7 +55,7 @@ public class JaccardDistanceSimple {
         	Set<String> items = splitLetter(line);
 
         	/// 유사도 측정 
-        	double similarity = mesasureJaccard(inputs, items);
+        	double similarity = measureJaccard(inputs, items);
         	
         	similaries.put(line, similarity);
 //	        	System.out.println(line + " =  " +  similarity);
@@ -68,7 +68,7 @@ public class JaccardDistanceSimple {
         }
 	}
 	
-	double mesasureJaccard(Set<String> item1, Set<String> item2 ) {
+	double measureJaccard(Set<String> item1, Set<String> item2 ) {
 		
 		Set<String> kyojibhab = intersection( item1, item2 );
 		Set<String> habjibhab = union( item1, item2 );
