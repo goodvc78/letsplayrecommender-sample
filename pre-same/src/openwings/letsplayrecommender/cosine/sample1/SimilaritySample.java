@@ -16,10 +16,15 @@ public class SimilaritySample {
 		double simMom = measureCosine(mom, baby);
 		double simDad = measureCosine(dad, baby);
 		
-		System.out.println(" mon = " + simMom );
-		System.out.println(" dad = " + simDad );
+		System.out.println(" consine mon = " + simMom );
+		System.out.println(" consine dad = " + simDad );
 		
 		
+		simMom = measureEuclidean(mom, baby);
+		simDad = measureEuclidean(dad, baby);
+		
+		System.out.println(" eu mon = " + simMom );
+		System.out.println(" eu dad = " + simDad );
 	}
 
 	private static double measureCosine(Integer[] A, Integer[] B) {
@@ -38,5 +43,15 @@ public class SimilaritySample {
 	}
 	
 	
+	private static double measureEuclidean( Integer[] A, Integer[] B ) {
+		
+		double sum = 0.0;
+        for (int i=0 ; i<A.length ; i++) {
+        	sum = sum + Math.pow((A[i]-B[i]),2.0);
+        }
+        return Math.sqrt(sum);
+	}
+	
 
+	
 }

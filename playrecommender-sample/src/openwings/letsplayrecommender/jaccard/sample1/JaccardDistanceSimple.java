@@ -99,14 +99,4 @@ public class JaccardDistanceSimple {
 				tmp.add(x);
 	    return tmp;
 	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
