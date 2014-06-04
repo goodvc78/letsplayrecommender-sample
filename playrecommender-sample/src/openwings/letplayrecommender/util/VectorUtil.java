@@ -1,4 +1,4 @@
-package openwings.letplayrecommender.kmeanssample;
+package openwings.letplayrecommender.util;
 
 
 import java.util.Vector;
