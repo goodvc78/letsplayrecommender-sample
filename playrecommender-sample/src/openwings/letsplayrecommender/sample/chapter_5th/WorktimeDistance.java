@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Vector;
 
-import openwings.letplayrecommender.distance.DistanceMeasure;
-import openwings.letplayrecommender.util.Dataset;
-import openwings.letplayrecommender.util.MathUtil;
+import openwings.letsplayrecommender.distance.DistanceMeasure;
+import openwings.letsplayrecommender.util.Dataset;
+import openwings.letsplayrecommender.util.MathUtil;
 
 public class WorktimeDistance {
 	

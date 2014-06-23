@@ -1,4 +1,4 @@
-package openwings.letplayrecommender.util;
+package openwings.letsplayrecommender.util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

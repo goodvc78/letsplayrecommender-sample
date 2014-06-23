@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Scanner;
 import java.util.Set;
 
 
@@ -39,8 +40,11 @@ public class JaccardDistanceSimple {
 	
 	void mainLoog() throws IOException {
 		
-		String input = "NBC 히어로즈 시즌1 EP07.mp4";
-		
+//		String input = "NBC 히어로즈 시즌1 EP07.mp4";
+
+		byte inputBytes[] = new byte[100];
+		System.in.read(inputBytes);
+		String input = new String(inputBytes);
 		System.out.println("input = " + input);
 		/// 글자를 2 letter splite
 		Set<String> inputs = splitLetter(input);
@@ -58,8 +62,7 @@ public class JaccardDistanceSimple {
         	double similarity = measureJaccard(inputs, items);
         	
         	similaries.put(line, similarity);
-//	        	System.out.println(line + " =  " +  similarity);
-        }
+       }
 	    
         List<Entry<String, Double>> result = entriesSortedByValues(similaries);
         

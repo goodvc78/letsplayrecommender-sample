@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Vector;
 
-import openwings.letplayrecommender.kmeanssample.KmeansClustering;
-import openwings.letplayrecommender.util.Dataset;
+import openwings.letsplayrecommender.kmeanssample.KmeansClustering;
+import openwings.letsplayrecommender.util.Dataset;
 
 public class CusteringWorktimeMain {
 
